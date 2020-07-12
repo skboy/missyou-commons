@@ -9,6 +9,10 @@ package com.missyou.commons.response;
 public enum ResponseCode {
 
     /**
+     * 未知错误
+     */
+    UNKNOWN(-1,"未知错误"),
+    /**
      * 请求成功
      */
     SUCCESS(20000, "成功"),
@@ -60,7 +64,8 @@ public enum ResponseCode {
      * 用户已存在
      */
     USER_HAS_EXISTED(20005, "用户已存在"),
-
+    USER_NICK_HAS_EXISTED(2006,"昵称已存在"),
+    USER_EMAIL_HAS_EXISTED(2007,"USER_EMAIL_HAS_EXISTED"),
     // ------------------------------------------------------- 用户错误：20001-29999 End
 
     // ------------------------------------------------------- 业务错误：30001-39999 Start
